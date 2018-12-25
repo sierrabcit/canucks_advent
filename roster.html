@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Canuck Christmas</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+  h2 {
+    font-family: 'Josefin Sans', cursive;
+    color: white;
+    font-size: 50px;
+  }
+  h3 {
+    font-family: 'Josefin Sans', cursive;
+    color: white;
+    font-size: 35px;
+  }
+  
+* {
+  box-sizing: border-box;
+}
+  body {
+  background-color: #071c2c;
+}
+.sidebar {
+  background-color: white;
+  float:right;
+  width: auto;
+  height: auto;
+}
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  text-align: right;
+}
+.sidebar li a {
+  display: block;
+  width: 60px;
+  color: #071c2c;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Josefin Sans', cursive;
+  margin:20px 30px 10px 20px;
+}
+.sidebar li a:hover{
+  color: #00843d;
+}
+#searchbar {
+  /*background-position: 10px 10px;
+  background-repeat: no-repeat;*/
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 20px;
+  border: 1px solid #ddd;
+  margin: 15px 0px 15px 0px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 90vw;
+  border: 1px solid white;
+  font-size: 18px;
+  font-family: 'Josefin Sans', cursive;
+  margin: 0px 10px 10px 10px;
+}
+
+.table th, .table td {
+  text-align: left;
+  padding: 5px;
+  
+}
+.table th {
+    color: #071c2c;
+  }
+.table td {
+    color: white;
+  }
+.table tr {
+  border-bottom: 1px solid #ddd;
+  
+}
+
+.table tr.header {
+  background-color: #f1f1f1;
+}
+  
+.fin img{
+  position: sticky;
+  width: 420px;
+  height:auto;
+  border-style: none;
+  
+}
+footer {
+  text-align: right;
+}
+footer a {
+  color: white;
+  font-family: 'Josefin Sans', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+  
+  <h2>2018/2019 Roster</h2>
+  
+<div class="sidebar">
+    <ul>
+  <li><a href="index.html">Advent</a></li>
+  <li><a href="roster.html">Roster</a></li>
+  <li><a href="sources.html">Sources</a></li>
+</ul>
+ </div>
+  
+
+<input type="text" id="searchbar" onkeyup="searchPlayers()" placeholder="Search for names.." title="Type in a name">
+  
+<h3>Forwards</h3>
+<table id="table" class="table">
+  <tr class="header">
+    <th style="width:5%;">Name</th>
+    <th style="width:5%;">Jersey #</th>
+    <th style="width:5%;">Position</th>
+    <th style="width:5%;">Shoots</th>
+    <th style="width:5%;">Measurements</th>
+    <th style="width:5%;">Birthdate</th>
+    <th style="width:5%;">Hometown</th>
+  </tr>
+  <tr>
+    <td>Sven Baertschi</td>
+    <td>47</td>
+    <td>LW</td>
+    <td>L</td>
+    <td>5'11 190lbs</td>
+    <td>10/05/92</td>
+    <td>Bern, CHE</td>
+  </tr>
+ <tr>
+    <td>Jay Beagle</td>
+    <td>83</td>
+    <td>C</td>
+    <td>R</td>
+    <td>6'3, 210lbs</td>
+    <td>10/16/85</td>
+    <td>Calgary, AB, CAN</td>
+  </tr>
+  <tr>
+    <td>Brock Boeser</td>
+    <td>6</td>
+    <td>RW</td>
+    <td>R</td>
+    <td>6'1, 208lbs</td>
+    <td>02/25/97</td>
+    <td>Burnsville, MN, USA</td>
+  </tr>
+  <tr>
+    <td>Louis Eriksson</td>
+    <td>21</td>
+    <td>LW</td>
+    <td>L</td>
+    <td>6'2, 179lbs</td>
+    <td>07/17/85</td>
+    <td>Gothenburg, SWE</td>
+  </tr>
+  <tr>
+    <td>Adam Gaudette</td>
+    <td>88</td>
+    <td>C</td>
+    <td>R</td>
+    <td>6'1, 170lbs</td>
+    <td>10/03/96</td>
+    <td>Braintree, MA, USA</td>
+  </tr>
+  <tr>
+    <td>Nikolay Goldobin</td>
+    <td>77</td>
+    <td>RW</td>
+    <td>L</td>
+    <td>5'11, 196lbs</td>
+    <td>10/07/95</td>
+    <td>Moscow, RUS</td>
+  </tr>
+  <tr>
+    <td>Markus Granlund</td>
+    <td>60</td>
+    <td>C</td>
+    <td>L</td>
+    <td>6'0, 180lbs</td>
+    <td>04/16/93</td>
+    <td>Oulu, FIN</td>
+  </tr>
+  <tr>
+    <td>Bo Horvat</td>
+    <td>53</td>
+    <td>C</td>
+    <td>L</td>
+    <td>6'0, 215lbs</td>
+    <td>04/05/95</td>
+    <td>London, ON, CAN</td>
+  </tr>
+  <tr>
+    <td>Josh Leivo</td>
+    <td>17</td>
+    <td>LW</td>
+    <td>R</td>
+    <td>6'2, 192lbs</td>
+    <td>05/26/93</td>
+    <td>Innisfil, ON, CAN</td>
+  </tr>
+  <tr>
+    <td>Tyler Motte</td>
+    <td>64</td>
+    <td>C</td>
+    <td>L</td>
+    <td>5'10, 192lbs</td>
+    <td>03/10/95</td>
+    <td>Gothenburg, SWE</td>
+  </tr>
+  <tr>
+    <td>Elias Pettersson</td>
+    <td>40</td>
+    <td>C</td>
+    <td>L</td>
+    <td>6'2, 176lbs</td>
+    <td>11/12/98</td>
+    <td>Sundsvall, SWE</td>
+  </tr>
+  <tr>
+    <td>Antoine Roussel</td>
+    <td>26</td>
+    <td>LW</td>
+    <td>L</td>
+    <td>5'11, 199lbs</td>
+    <td>11/21/89</td>
+    <td>Roubaix, FRA</td>
+  </tr>
+    <tr>
+    <td>Tim Schaller</td>
+    <td>59</td>
+    <td>C</td>
+    <td>L</td>
+    <td>6'2, 204lbs</td>
+    <td>11/16/90</td>
+    <td>Merrimack, NH, USA</td>
+  </tr>
+    <tr>
+    <td>Brandon Sutter*</td>
+    <td>20</td>
+    <td>C</td>
+    <td>R</td>
+    <td>6'3, 190lbs</td>
+    <td>02/14/89</td>
+    <td>Huntington, NY, USA</td>
+  </tr>
+    <tr>
+    <td>Jake Virtanen</td>
+    <td>18</td>
+    <td>RW</td>
+    <td>R</td>
+    <td>6'1, 226lbs</td>
+    <td>02/17/96</td>
+    <td>Langley, BC, CAN</td>
+  </tr>
+</table>
+
+<h3>Defence</h3>
+  <table id="table" class="table">
+  <tr class="header">
+    <th style="width:5%;">Name</th>
+    <th style="width:5%;">Jersey #</th>
+    <th style="width:5%;">Shoots</th>
+    
+    <th style="width:5%;">Measurements</th>
+    <th style="width:5%;">Birthdate</th>
+    <th style="width:5%;">Hometown</th>
+  </tr>
+  <tr>
+    <td>Alex Biega</td>
+    <td>55</td>
+    <td>R</td>
+    <td>5'10 199lbs</td>
+    <td>04/04/88</td>
+    <td>Montreal, QC, CAN</td>
+  </tr>
+    <tr>
+    <td>Michael del Zotto</td>
+    <td>4</td>
+    <td>L</td>
+    <td>6'0 201lbs</td>
+    <td>06/24/90</td>
+    <td>Stouffville, ON, CAN</td>
+  </tr>
+    <tr>
+    <td>Alex Edler</td>
+    <td>23</td>
+    <td>L</td>
+    <td>6'3 212lbs</td>
+    <td>04/21/86</td>
+    <td>Ostersund, SWE</td>
+  </tr>
+    <tr>
+    <td>Erik Gudbranson</td>
+    <td>44</td>
+    <td>R</td>
+    <td>6'5 217lbs</td>
+    <td>01/07/92</td>
+    <td>Ottawa, ON, CAN</td>
+  </tr>
+ <tr>
+    <td>Ben Hutton</td>
+    <td>27</td>
+    <td>L</td>
+    <td>6'2 206lbs</td>
+    <td>04/20/93</td>
+    <td>Brockville, ON, CAN</td>
+  </tr>
+    <tr>
+    <td>Derek Pouliot</td>
+    <td>5</td>
+    <td>L</td>
+    <td>6'0 196lbs</td>
+    <td>01/16/94</td>
+    <td>Estevan, SK, CAN</td>
+  </tr>
+    <tr>
+    <td>Troy Stecher</td>
+    <td>51</td>
+    <td>R</td>
+    <td>5'10 186lbs</td>
+    <td>04/07/94</td>
+    <td>Richmond, BC, CAN</td>
+  </tr>
+    <tr>
+    <td>Chris Tanev</td>
+    <td>8</td>
+    <td>R</td>
+    <td>6'2 197lbs</td>
+    <td>12/20/89</td>
+    <td>Toronto, ON, CAN</td>
+  </tr>
+</table>
+<h3>Goalies</h3>
+  <table id="table" class="table">
+  <tr class="header">
+    <th style="width:5%;">Name</th>
+    <th style="width:5%;">Jersey #</th>
+    <th style="width:5%;">Measurements</th>
+    <th style="width:5%;">Birthdate</th>
+    <th style="width:5%;">Hometown</th>
+  </tr>
+  <tr>
+    <td>Jakob Markstrom</td>
+    <td>25</td>
+    <td>6'6 206lbs</td>
+    <td>01/31/90</td>
+    <td>Gävle, SWE</td>
+  </tr>
+    <tr>
+    <td>Anders Nilsson</td>
+    <td>31</td>
+    <td>6'6 232lbs</td>
+    <td>03/19/90</td>
+    <td>Lulea, SWE</td>
+  </tr>
+</table>
+  
+  <div class="fin">
+  <img src="img/fin.png"/>
+</div>
+
+<footer>
+  <a href="http://sierraschuss.com">© Sierra Schuss</a>
+</footer>
+
+  
+<script>
+function searchPlayers() {
+  
+  var input, filter, table, tr, td, i, txtValue;
+  
+  input = document.getElementById("searchbar");
+  
+  filter = input.value.toUpperCase();
+  
+  table = document.getElementById("table");
+  
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
